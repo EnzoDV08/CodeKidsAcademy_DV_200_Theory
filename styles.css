@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
-/* Navbar */
+
 .navbar {
     padding: 1rem 0;
 }
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5 {
     color: #ff5e57;
 }
 
-/* Hero Section */
+
 .hero {
     height: 100vh;
     background-size: cover;
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5 {
     transform: scale(1.05);
 }
 
-/* Curriculum Section */
+
 .curriculum-header {
     color: #3662c2;
     padding: 50px 0;
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5 {
     animation: fadeInUp 1.4s ease;
 }
 
-/* Timeline Styling */
+
 .timeline {
     position: relative;
     padding: 20px 0;
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5 {
     line-height: 1.8;
 }
 
-/* Animations */
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -261,7 +261,7 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-/* Footer Styling */
+
 footer {
     background-color: #343a40;
     color: #fff;
@@ -353,7 +353,7 @@ footer .small {
     color: #888;
 }
 
-/* Responsive Footer Styling */
+
 @media (max-width: 768px) {
     footer .row > div {
         margin-bottom: 30px;
@@ -366,7 +366,7 @@ footer .small {
     }
 }
 
-/* Responsive Timeline and Layout Styling */
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -415,7 +415,7 @@ footer .small {
   color: #be1d5b;
 }
 
-/* Testimonials Section */
+
 .testimonials {
     background-color: #007bff;
     color: white;
@@ -456,11 +456,11 @@ footer .small {
     padding-right: 240px;
 }
 
-/* Coding Tools Image Styling */
+
 .tool-img {
-    width: 100px; /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
-    object-fit: contain; /* Ensures the image fits within the box while maintaining aspect ratio */
+    width: 100px; 
+    height: 100px; 
+    object-fit: contain; 
     display: block;
     margin-left: auto;
     margin-right: auto;
