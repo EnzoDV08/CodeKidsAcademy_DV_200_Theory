@@ -1,0 +1,467 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff5e57;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #4173df;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #007bff;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn-primary {
+    background-color: #ff5e57;
+    color: #fff;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05);
+}
+
+/* Curriculum Section */
+.curriculum-header {
+    color: #3662c2;
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    position: relative;
+    overflow: hidden;
+}
+
+.curriculum-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+}
+
+.curriculum-header p {
+    font-size: 1.3rem;
+    animation: fadeInUp 1.2s ease;
+}
+
+.curriculum-breakdown {
+    padding: 60px 0;
+}
+
+.curriculum-breakdown h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.2s ease;
+    text-align: center;
+}
+
+.curriculum-breakdown h4 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #007bff;
+    position: relative;
+    padding-left: 20px;
+}
+
+.curriculum-breakdown h4::before {
+    content: "•";
+    color: #ff5e57;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2rem;
+}
+
+.curriculum-breakdown p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    animation: fadeInUp 1.4s ease;
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #ddd;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    animation: fadeInUp 0.7s ease-in-out;
+}
+
+.timeline-item:nth-child(odd) {
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    text-align: left;
+}
+
+.timeline-item::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.timeline-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-icon:hover {
+    background-color: #ff5e57;
+}
+
+.timeline-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 45%;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    float: right;
+    transform: translateX(-15px);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    float: left;
+    transform: translateX(15px);
+}
+
+.timeline-content:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+}
+
+.timeline-content h4 {
+    font-size: 1.4rem;
+    color: #007bff;
+}
+
+.timeline-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 50px 0;
+    position: relative;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff5e57;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+footer ul li i {
+    margin-right: 10px;
+    color: #ff5e57;
+}
+
+footer .footer-link {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-link:hover {
+    color: #ff5e57;
+}
+
+.newsletter-form input[type="email"] {
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    border-radius: 50px;
+    background-color: #ff5e57;
+    color: white;
+    border: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #e74c3c;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff5e57;
+}
+
+footer .text-center p {
+    margin: 0;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+footer .small {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Responsive Footer Styling */
+@media (max-width: 768px) {
+    footer .row > div {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Responsive Timeline and Layout Styling */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content, 
+    .timeline-item:nth-child(even) .timeline-content {
+        float: none;
+        transform: translateX(0);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content, 
+    .timeline-item:nth-child(odd) .timeline-content {
+        width: 90%;
+    }
+
+    .curriculum-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .curriculum-header p {
+        font-size: 1.2rem;
+    }
+}
+
+.display-4 {
+  color: #4173df;
+}
+
+.lead {
+  color: #be1d5b;
+}
+
+.display-5 {
+  color: #4173df;
+}
+
+.leads {
+  color: #be1d5b;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #007bff;
+    color: white;
+    padding: 60px 0;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card blockquote {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+.testimonial-card blockquote footer {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: right;
+    margin-top: 10px;
+    font-style: italic;
+    padding-right: 240px;
+}
+
+/* Coding Tools Image Styling */
+.tool-img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    object-fit: contain; /* Ensures the image fits within the box while maintaining aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
