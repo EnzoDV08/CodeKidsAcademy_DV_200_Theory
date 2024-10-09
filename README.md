@@ -40,7 +40,7 @@ This website is part of a project for a coding school aimed at children aged 8 t
   - Tools used: Scratch, HTML, CSS, JavaScript
 
 ### 👩‍🏫 About Us Page
-- **Our Story**:  
+- **My Story**:  
   “Code Kids Academy was founded to inspire the next generation of programmers by making coding accessible, fun, and creative.”
 
 - **Meet Our Instructors**:  
